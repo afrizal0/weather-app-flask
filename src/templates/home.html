@@ -1,0 +1,14 @@
+<html>
+	<h1> WEATHER-APP FLASK </h1>
+	<form method="POST" action="{{ url_for('weather') }}">
+		<div>
+			<label> Access Key </label><br>
+			<input type="text" name="access_key" required>
+			<a href="https://weatherstack.com/signup/free" target="__blank"> get free </a>
+		</div>
+		<label> Location </label><br>
+		<input type="text" name="location" required>
+		<a href="/weather"><button type="submit">get</button></a>
+	</form>
+</html>
+
